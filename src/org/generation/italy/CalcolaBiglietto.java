@@ -21,11 +21,11 @@ public class CalcolaBiglietto {
 		eta = input.nextInt();
 
 		if(eta < 18 && eta >1) {
-			System.out.println("Prezzo del biglietto: " + (sommaEuroKm - (sommaEuroKm * under)));
+			System.out.println("Prezzo del biglietto: " + (sommaEuroKm - (sommaEuroKm * under)) + " euro");
 		} else if(eta >= 65) {
-			System.out.println("Prezzo del biglietto: " + (sommaEuroKm - (sommaEuroKm * over)));
+			System.out.println("Prezzo del biglietto: " + (sommaEuroKm - (sommaEuroKm * over)) + " euro");
 		} else {
-			System.out.println("Prezzo del biglietto: " + sommaEuroKm);
+			System.out.println("Prezzo del biglietto: " + sommaEuroKm + " euro");
 		}
 		
 		// close  Scanner
