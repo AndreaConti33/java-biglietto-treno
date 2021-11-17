@@ -25,9 +25,9 @@ public class CalcolaBiglietto {
 		//conditions
 		
 		if(eta < 18 && eta >1) {
-			prezzo = prezzo - (prezzo * under);
+			prezzo -= prezzo * under;
 		} else if(eta >= 65) {
-			prezzo = prezzo - (prezzo * over);
+			prezzo -= prezzo * over;
 		}
 		//print
 		System.out.println("Costo del biglietto: " + prezzo + " euro");
