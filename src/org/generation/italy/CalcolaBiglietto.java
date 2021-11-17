@@ -16,22 +16,23 @@ public class CalcolaBiglietto {
 		
 		System.out.print("Digitare i chilometri da percorrere: ");
 		kmDaPercorrere = input.nextDouble();
-		double prezzoBiglietto = costoPerKm * kmDaPercorrere;
+		
 		System.out.print("Digitare la sua età: ");
 		eta = input.nextInt();
+		
+		double prezzo = costoPerKm * kmDaPercorrere;
 		
 		//conditions
 		
 		if(eta < 18 && eta >1) {
-			prezzoBiglietto = prezzoBiglietto - (prezzoBiglietto * under);
+			prezzo = prezzo - (prezzo * under);
 		} else if(eta >= 65) {
-			prezzoBiglietto = prezzoBiglietto - (prezzoBiglietto * over);
+			prezzo = prezzo - (prezzo * over);
 		}
 		//print
-		System.out.println("Costo del biglietto: " + prezzoBiglietto + " euro");
+		System.out.println("Costo del biglietto: " + prezzo + " euro");
 			
 		// close  Scanner
 		input.close();
 	}
 }
-
